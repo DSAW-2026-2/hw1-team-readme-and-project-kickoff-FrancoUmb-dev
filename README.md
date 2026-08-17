@@ -53,5 +53,5 @@ No es "cualquier negocio" ni "cualquier persona": la primera versión se diseña
 
 ## Deploy
 
-- GitHub Pages: *(lo agregamos cuando lo activemos)*
-- Figma: ver `figma-link.txt`
+- GitHub Pages: https://dsaw-2026-2.github.io/hw1-team-readme-and-project-kickoff-FrancoUmb-dev/
+- Figma: ver https://www.figma.com/design/i0LHQGczrAGr6AqProBqJV/Proyecto-DSAW?node-id=0-1&t=ZS6t7uOzXtOQ8xty-1
