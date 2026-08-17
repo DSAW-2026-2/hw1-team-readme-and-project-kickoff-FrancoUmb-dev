@@ -1,51 +1,93 @@
-# HW01 — Team README & Project Kickoff
+## Deploy
 
-**Week 1 · DSAW · Universidad de La Sabana**
+- GitHub Pages: https://dsaw-2026-2.github.io/hw1-team-readme-and-project-kickoff-FrancoUmb-dev/
+- Figma: ver https://www.figma.com/design/i0LHQGczrAGr6AqProBqJV/Proyecto-DSAW?node-id=0-1&t=ZS6t7uOzXtOQ8xty-1
 
-## Objective
+# ConectaNegocio
 
-Form your team, choose the problem you will solve this semester, and argue why it deserves a web application.
+Aplicación web que conecta pequeños comercios con sus proveedores para comparar ofertas, conversar en contexto y hacer seguimiento a pedidos y entregas — sin cambiar de plataforma.
 
-## Deliverables
+## Problema
 
-Create the following files at the root of the repository:
+Los administradores de pequeños comercios (por ejemplo, una papelería de barrio) que compran productos a varios proveedores no cuentan con un espacio centralizado para:
 
-### `README.md`
-Must include:
-- **Problem:** What problem are you solving? Be specific. Not "improve communication" but "Sabana students don't know when study rooms are available."
-- **Web app justification:** Why a web app and not a spreadsheet, a WhatsApp group, or an existing tool? Give at least 3 concrete reasons.
-- **Target users:** Who will use it? Be specific — not "anyone."
-- **User stories (minimum 3):** Format: `As a [user type], I want to [action] so that [benefit].`
-- **Team roles:** Who does what. Every team member must have a clear, named role.
+- Comparar ofertas equivalentes de distintos proveedores (precio, presentación, cantidad mínima, tiempo de entrega).
+- Conservar la conversación comercial asociada a cada oferta o pedido específico.
+- Consultar el estado de sus pedidos y registrar entregas completas o parciales.
 
-### `index.html`
-A simple landing page (no CSS yet) that introduces the project. GitHub Pages will publish it automatically.
+Hoy esa información está repartida entre llamadas, mensajes de WhatsApp, notas sueltas y una plataforma de ventas/inventario que no cubre el proceso de abastecimiento con proveedores. Esto obliga a comparar y hacer seguimiento manualmente, consume tiempo y hace fácil perder el contexto de lo acordado.
 
-### `figma-link.txt`
-A text file containing the link to your Figma sketch (or a photo of a whiteboard). Any visual representation of how you imagine the app works.
+## Justificación de aplicación web
 
-## Layer 2
+No basta con una hoja de cálculo, un grupo de WhatsApp o la herramienta de ventas que ya usa el comercio:
 
-The sketch must show at least one screen with annotations that explain what each element does.
+1. **Permisos diferenciados por organización.** Una hoja de cálculo no distingue de forma natural entre lo que puede ver/editar un comerciante y lo que puede ver/editar cada proveedor; una app web sí puede aplicar roles y permisos reales en el backend.
+2. **WhatsApp organiza por contacto, no por negociación.** Las conversaciones quedan sueltas por chat, no vinculadas a una oferta o un pedido concreto, así que comparar proveedores implica saltar entre chats y perder contexto.
+3. **La herramienta de ventas existente resuelve otro momento del negocio** (registrar ventas e inventario interno), no la relación previa y posterior con el proveedor (comparar, conversar, hacer seguimiento).
+4. **Acceso multi-dispositivo sin instalar nada.** Tanto el comerciante como el proveedor pueden entrar desde computador, tableta o celular con el mismo estado sincronizado, sin depender de una app nativa instalada por cada actor.
 
-## AI Log
+## Usuarios objetivo
 
-Did you use AI to write the user stories or the problem statement? If so, include in the README:
-- The exact prompt you used
-- What changed from what the AI generated
-- Why you made those changes
+- **Comerciantes:** administradores o propietarios de pequeños comercios (ej. una papelería de barrio) que compran productos a varios proveedores de forma recurrente.
+- **Proveedores/distribuidores:** publican productos, reciben pedidos de esos comercios y gestionan su preparación, despacho y entrega.
 
-## Deployment
+No es "cualquier negocio" ni "cualquier persona": la primera versión se diseña para este par de roles y este flujo de abastecimiento.
 
-The repository must have GitHub Pages enabled. The URL must load correctly.
+## Historias de usuario
 
-## Autograding
+1. Como comerciante, quiero crear una cuenta con mi comercio para acceder a las funciones propias de mi rol.
+2. Como comerciante, quiero comparar varias ofertas de un mismo producto para decidir con mejor información sin consultar cada proveedor por separado.
+3. Como comerciante, quiero iniciar un chat desde una oferta específica para que el proveedor sepa exactamente a qué producto me refiero.
+4. Como comerciante, quiero confirmar las cantidades que recibí de un pedido para poder distinguir entregas completas de entregas parciales.
+5. Como proveedor, quiero actualizar el estado de preparación y despacho de un pedido para mantener informado al comerciante sin que tenga que preguntar.
 
-The pipeline will check:
-- ✅ Presence of `README.md`, `index.html`, `figma-link.txt`
-- ✅ `index.html` has content
-- ✅ `figma-link.txt` contains a URL
-- ✅ GitHub Pages URL responds with HTTP 200
-- ✅ README argues why a web app is the right solution (reviewed by Claude)
+## Roles del equipo
 
-> **Submission rule:** If it is not deployed and public, it cannot be graded.
+| Integrante | Rol |
+|---|---|
+| Sebastian Franco Umbacia | Soporte transversal | 
+| Alejandro Caycedo | Apoyo en Figma / diseño | 
+| Catalina Vega Romero | Figma / UX lead | 
+| Jose  | Estructura del proyecto / documentación | 
+
+## Registro de uso de IA
+
+- **Prompt exacto utilizado:** el equipo usó Claude (Anthropic) a lo largo de varias sesiones para redactar el planteamiento del problema y las historias de usuario a partir de las notas de clase sobre el caso de la papelería, para generar el esqueleto HTML semántico, y para organizar la secuencia de tareas del curso semana a semana.
+- **Qué cambió respecto a lo que generó la IA:** se reemplazaron ideas de proyecto iniciales (seguimiento de tesis, mantenimiento de conjuntos) por la que sí se validó con el caso real discutido en clase; se corrigieron los identificadores de código a inglés; se completaron los nombres reales del equipo.
+- **Por qué se hicieron esos cambios:** para que el documento reflejara el problema realmente validado por el equipo y no un ejemplo genérico, y para cumplir la convención de idioma del curso.
+
+- ## Registro de uso de IA
+
+**Prompt utilizado:** le pedí a Claude que tomara el planteamiento del
+problema y las historias de usuario que ya habíamos discutido como
+equipo (basado en el documento maestro de ConectaNegocio y en la
+conversación real de WhatsApp donde descartamos dos ideas anteriores) y
+las organizara en el formato exacto que pide la tarea.
+
+**Qué generó la IA primero:** la primera versión usaba contenido de una
+idea que en ese momento el equipo todavía estaba evaluando
+(mantenimiento en conjuntos residenciales), antes de que la
+descartáramos por encontrar competencia directa real (micondominio.co,
+ComunidadFeliz).
+
+**Qué cambié y por qué:**
+1. Reemplacé el contenido genérico por ConectaNegocio en cuanto el
+   equipo confirmó por WhatsApp que era la idea definitiva.
+2. La tabla de roles tenía placeholders que completé con los nombres
+   reales del equipo.
+3. Tuve un problema real de Git: los archivos se crearon fuera de la
+   carpeta del repositorio clonado, así que `git add .` no detectaba
+   nada. Tocó borrarlos y crearlos de nuevo con clic derecho
+   directamente sobre la carpeta del repo.
+4. El repositorio ya traía su propio `README.md` (las instrucciones de
+   Classroom), así que no pude crear uno nuevo — tocó reemplazar el
+   contenido del existente.
+
+**Parte que no entendí de inmediato:** por qué `git status` decía
+"nothing to commit" si yo veía los archivos en VS Code. La causa era
+que estaban un nivel por fuera de la carpeta real del repositorio.
+
+## Deploy
+
+- GitHub Pages: https://dsaw-2026-2.github.io/hw1-team-readme-and-project-kickoff-FrancoUmb-dev/
+- Figma: ver https://www.figma.com/design/i0LHQGczrAGr6AqProBqJV/Proyecto-DSAW?node-id=0-1&t=ZS6t7uOzXtOQ8xty-1
