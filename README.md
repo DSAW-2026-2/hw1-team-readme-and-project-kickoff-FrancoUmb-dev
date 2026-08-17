@@ -38,12 +38,12 @@ No es "cualquier negocio" ni "cualquier persona": la primera versión se diseña
 
 ## Roles del equipo
 
-| Integrante | Rol | Responsabilidades |
-|---|---|---|
-| Sebastian Franco Umbacia | Soporte transversal | Diseño, código, Git |
-| Alejandro Caycedo | Apoyo en Figma / diseño | [completar] |
-| Catalina Vega Romero | Figma / UX lead | [completar] |
-| Jose [FALTA APELLIDO] | Estructura del proyecto / documentación | [completar] |
+| Integrante | Rol |
+|---|---|
+| Sebastian Franco Umbacia | Soporte transversal | 
+| Alejandro Caycedo | Apoyo en Figma / diseño | 
+| Catalina Vega Romero | Figma / UX lead | 
+| Jose  | Estructura del proyecto / documentación | 
 
 ## Registro de uso de IA
 
