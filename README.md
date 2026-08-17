@@ -56,6 +56,37 @@ No es "cualquier negocio" ni "cualquier persona": la primera versión se diseña
 - **Qué cambió respecto a lo que generó la IA:** se reemplazaron ideas de proyecto iniciales (seguimiento de tesis, mantenimiento de conjuntos) por la que sí se validó con el caso real discutido en clase; se corrigieron los identificadores de código a inglés; se completaron los nombres reales del equipo.
 - **Por qué se hicieron esos cambios:** para que el documento reflejara el problema realmente validado por el equipo y no un ejemplo genérico, y para cumplir la convención de idioma del curso.
 
+- ## Registro de uso de IA
+
+**Prompt utilizado:** le pedí a Claude que tomara el planteamiento del
+problema y las historias de usuario que ya habíamos discutido como
+equipo (basado en el documento maestro de ConectaNegocio y en la
+conversación real de WhatsApp donde descartamos dos ideas anteriores) y
+las organizara en el formato exacto que pide la tarea.
+
+**Qué generó la IA primero:** la primera versión usaba contenido de una
+idea que en ese momento el equipo todavía estaba evaluando
+(mantenimiento en conjuntos residenciales), antes de que la
+descartáramos por encontrar competencia directa real (micondominio.co,
+ComunidadFeliz).
+
+**Qué cambié y por qué:**
+1. Reemplacé el contenido genérico por ConectaNegocio en cuanto el
+   equipo confirmó por WhatsApp que era la idea definitiva.
+2. La tabla de roles tenía placeholders que completé con los nombres
+   reales del equipo.
+3. Tuve un problema real de Git: los archivos se crearon fuera de la
+   carpeta del repositorio clonado, así que `git add .` no detectaba
+   nada. Tocó borrarlos y crearlos de nuevo con clic derecho
+   directamente sobre la carpeta del repo.
+4. El repositorio ya traía su propio `README.md` (las instrucciones de
+   Classroom), así que no pude crear uno nuevo — tocó reemplazar el
+   contenido del existente.
+
+**Parte que no entendí de inmediato:** por qué `git status` decía
+"nothing to commit" si yo veía los archivos en VS Code. La causa era
+que estaban un nivel por fuera de la carpeta real del repositorio.
+
 ## Deploy
 
 - GitHub Pages: https://dsaw-2026-2.github.io/hw1-team-readme-and-project-kickoff-FrancoUmb-dev/
