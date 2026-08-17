@@ -1,3 +1,8 @@
+## Deploy
+
+- GitHub Pages: https://dsaw-2026-2.github.io/hw1-team-readme-and-project-kickoff-FrancoUmb-dev/
+- Figma: ver https://www.figma.com/design/i0LHQGczrAGr6AqProBqJV/Proyecto-DSAW?node-id=0-1&t=ZS6t7uOzXtOQ8xty-1
+
 # ConectaNegocio
 
 Aplicación web que conecta pequeños comercios con sus proveedores para comparar ofertas, conversar en contexto y hacer seguimiento a pedidos y entregas — sin cambiar de plataforma.
